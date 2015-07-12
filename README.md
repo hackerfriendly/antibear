@@ -1,3 +1,6 @@
+antibear.py
+===========
+
 Simple Alphabear (Boggle, Scrabble, etc.) solver
 
 For word games like Alphabear, where you gain points for making long words
@@ -11,22 +14,22 @@ words last.
 
 Usage:
 
-./alphabear.py [all of the letters on the board]
+	./alphabear.py [all of the letters on the board]
 
 Example: 
 
-./alphabear.py ealsbuhibubateihtdhs
-...
-10 healthiest
-10 stubbliest
-10 subtleties
-11 debilitates
-11 established
+	./alphabear.py ealsbuhibubateihtdhs
+	...
+	10 healthiest
+	10 stubbliest
+	10 subtleties
+	11 debilitates
+	11 established
 
 To find a word with a specific letter in it (eg. the red letters) just grep
 for them:
 
-./antibear.py edvdudssdatphatiihiigt |grep h
+	./antibear.py edvdudssdatphatiihiigt |grep h
 
 Will only work on systems with python, awk, grep, and /usr/share/dict/words
 (eg. Linux and Mac OS X).
